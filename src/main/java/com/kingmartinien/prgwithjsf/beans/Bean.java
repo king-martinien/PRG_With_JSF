@@ -18,7 +18,7 @@ import javax.inject.Named;
 public class Bean {
 
     private int number;
-    
+
     public int getNumber() {
         return number;
     }
@@ -31,7 +31,7 @@ public class Bean {
         int size = 5;
 
         List<Integer> numberList = new ArrayList<Integer>(size);
-        for (int i = size; i < this.number + size; i++) {
+        for (int i = number; i < this.number + size; i++) {
             numberList.add(i);
         }
         return numberList;
