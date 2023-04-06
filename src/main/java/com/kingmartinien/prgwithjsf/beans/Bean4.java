@@ -14,9 +14,9 @@ import javax.inject.Named;
  *
  * @author kingmartinien
  */
-@Named(value = "bean")
+@Named(value = "bean4")
 @RequestScoped
-public class Bean implements Serializable{
+public class Bean4 implements Serializable{
 
     private int number;
 
@@ -39,6 +39,6 @@ public class Bean implements Serializable{
     }
     
     public String display() {
-        return "display3?faces-redirect=true&number="+number;
+        return "display4?faces-redirect=true&number="+number;
     }
 }
