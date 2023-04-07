@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ul>
+        <li><h:link outcome="/index" value="Home"/></li>
+        <li><h:link outcome="/form_1" value="Exercice 1"/></li>
+        <ui:remove>
+            <li><h:link outcome="/form_2" value="Exercice 2"/></li>
+            <li><h:link outcome="/form_3" value="Exercice 3"/></li>
+        </ui:remove>
+        <li><h:link outcome="/form_4" value="Exercice 4"/></li>
+    </ul>
+</ui:composition>
